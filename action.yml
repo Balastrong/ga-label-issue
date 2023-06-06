@@ -1,0 +1,7 @@
+name: "Label new pull requests"
+description: "Add a label when a new PR is opened."
+author: "Leonardo Montini"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
