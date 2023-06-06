@@ -2,6 +2,14 @@ name: "Label new pull requests"
 description: "Add a label when a new PR is opened."
 author: "Leonardo Montini"
 
+inputs:
+  gh-token:
+    description: 'The GitHub token for authentication.'
+    required: true
+  label:
+    description: 'The label to be applied to the pull request.'
+    required: true
+
 runs:
   using: "node16"
   main: "dist/index.js"
